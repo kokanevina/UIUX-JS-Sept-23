@@ -20,3 +20,11 @@ console.log(result3);
 // below logic is just to show the iterations
 let result4=nameArray.filter(empname=>{console.log("Hi");return empname.toLowerCase().startsWith('m');})
 console.log(result4);
+//DOM  : core js logic
+let olNode=document.createElement('ol');
+for(let empname of result4){
+    let liNode=document.createElement('li');
+    liNode.textContent=empname;
+    olNode.append(liNode);
+}
+document.body.prepend(olNode);
