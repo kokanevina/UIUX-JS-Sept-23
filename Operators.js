@@ -10,17 +10,17 @@ add(67,89,45,66);
 add();
 add(45);
 add(345,234);
-let ages =[56,78,34,3,45,67,89,12];
+let ages =[56,78,34,3,45,67,89,12];    let ages2=new Array(56,78,90,4,344);
 add(ages);
 
-let myages=ages; // this is not a copy
+let myages=ages; // this is not a copy  (shallow copy) new ref points to same array
 
 ages[0]=90;
 console.log(myages);
 
 // copy one array to new array
 
-let newarray=[...ages];
+let newarray=[...ages];   // deep copy
 console.log(newarray);
 
 ages[0]=11;
