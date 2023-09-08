@@ -1,0 +1,6 @@
+ Create string array with names of students. ["kiran","ruchir","shree","punit","anuradha"]
+
+1. Find the student names which contains letter r/R
+2. Concatenate all names with '-' in between 
+3. reverse every name and store in new array
+
