@@ -21,11 +21,13 @@ console.log(myages);
 // copy one array to new array
 
 let newarray=[...ages];   // deep copy
-console.log(newarray);
+//console.log(newarray);
 
+let array2=new Array(...ages); // deep copy
+console.log(array2);
 ages[0]=11;
-console.log(ages);
-console.log(newarray);
+//console.log(ages);
+//console.log(newarray);
 
 let ar1=["seema","meera"];
 let ar2=["mahi",'mohan'];
@@ -39,3 +41,15 @@ function getNames(name, ...names){
 }
 getNames('airoli','rabale','ghansoli');
 //can a function have multiple var args or not? : NO
+
+
+
+let cities=['pune','mumbai','solapur'];
+cities=[...cities,'delhi'];
+
+const lines=['harbour','central'];
+lines.push('transharbour');
+lines=[...lines,'westeren'];  /// error
+
+const myAge=67;
+myAge=99; // error
