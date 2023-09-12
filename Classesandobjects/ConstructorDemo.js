@@ -9,6 +9,10 @@ class Student{
         this.studentName="ABC";
         this.studentPercentage=30;
     }
+    /*A class may only have one constructor*/
+    /* constructor(id){
+
+    } */
 
     getDetails(){
         return `Student Details 
