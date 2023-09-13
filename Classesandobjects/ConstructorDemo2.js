@@ -32,3 +32,16 @@ let stud1=new Student(100,"Pooja",90.6); // call automatically goes to p-constru
 
  let stud5=new Student(); 
  console.log(stud5.getDetails())
+
+ console.log(stud1.studentId);
+ console.log(stud1.studentName);
+ console.log(stud1.studentPercentage);
+
+// iterate object using for in loop
+for(let key in stud1){
+    console.log(key);
+    console.log(stud1[key]);
+}
+
+// variable holding the value a=78
+// variable holding another variable key=studenId
