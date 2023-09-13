@@ -1,2 +1,5 @@
 Make Sum of percentage of all students using reduce.
 Then calculate Average and display
+
+Implement object array for entitiy u implemented in Assignment-3
+apply find, filter, map, reduce login on that array
