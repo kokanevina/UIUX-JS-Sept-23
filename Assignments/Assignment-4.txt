@@ -1,0 +1,2 @@
+Make Sum of percentage of all students using reduce.
+Then calculate Average and display
