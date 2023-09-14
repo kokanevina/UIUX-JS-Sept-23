@@ -53,7 +53,30 @@ class CRUD{
         }
         tableNode.append(tableBody);
     }
+    addRow(student){
+        trNode=document.createElement('tr');
+            for(let key in student){
+                tdNode=document.createElement('td');
+                tdNode.textContent=student[key];
+                trNode.append(tdNode);
+            }
+            tableBody.append(trNode) 
+    }
+    addData(student){
+        students.push(student);
+        this.addRow(student);
+    }
 }
 
 let crud=new CRUD();
 crud.readData();
+
+function collect(event){
+    event.preventDefault();
+    // do the logic for extracting data from form
+    let sid=parseInt(document.getElementById('id').value);
+    let sname=document.getElementById('name').value;
+    let spercent=parseFloat(document.getElementById('percent').value);
+    let student=new Student(sid,sname,spercent);
+    crud.addData(student);
+}

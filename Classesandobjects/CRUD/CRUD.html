@@ -6,7 +6,27 @@
     <title>CRUD</title>
 </head>
 <body>
-    
+    <form onsubmit="collect(event)">
+        <div>
+            <label for="id">ENTER ID:</label>
+            <input type="number" id="id" name="studentId" required>
+        </div>
+        <div>
+            <label for="name">ENTER NAME:</label>
+            <input type="text" id="name" name="studentName" required>
+        </div>
+        <div>
+            <label for="percent">ENTER PERCENTAGE:</label>
+            <input type="number" id="percent" name="studentPercentage" required>
+        </div>
+        <div>
+            <input type="submit" value="ADD STUDENT">
+            <input type="reset" value="RESET">
+        </div>
+    </form>
+    <!-- put ur own validation for this form-->
+
+
     <script src="CRUD.js"></script>
 </body>
 </html>
