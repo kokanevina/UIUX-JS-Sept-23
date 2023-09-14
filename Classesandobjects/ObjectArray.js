@@ -39,3 +39,5 @@ students.map(student=>"Neo-"+student.studentName).forEach(ele=>console.log(ele))
 
 students.map(student=>new Student(student.studentId, "Neo-"+student.studentName,student.studentPercentage))
         .forEach(ele=>console.log(ele));
+
+       // CRUD operations:  1. Adding new ele, 2. read all ele 3. updating exsiting ele, 4. deleting existing ele 
