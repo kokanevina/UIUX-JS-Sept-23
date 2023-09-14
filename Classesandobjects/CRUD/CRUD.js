@@ -26,6 +26,7 @@ const students=[student1,student2,student3,student4, new Student(108,'Kartik',78
 students.push(new Student(111,'Kiran',80.5));
 
 let tableNode=null;
+let tableBody=null;
 let trNode=null;
 let tdNode=null;
 function createTable(){
@@ -34,22 +35,25 @@ function createTable(){
     document.body.append(tableNode);
     tableNode.style.width='50%'
 }
-
 function addHeading(){
     // do ur own logic
 }
-
-function readData(){
-    for(let student of students){
-        trNode=document.createElement('tr');
-        for(let key in student){
-            tdNode=document.createElement('td');
-            tdNode.textContent=student[key];
-            trNode.append(tdNode);
+createTable();
+class CRUD{
+     readData(){
+        tableBody=document.createElement('tbody');
+        for(let student of students){
+            trNode=document.createElement('tr');
+            for(let key in student){
+                tdNode=document.createElement('td');
+                tdNode.textContent=student[key];
+                trNode.append(tdNode);
+            }
+            tableBody.append(trNode) 
         }
-       tableNode.append(trNode) 
+        tableNode.append(tableBody);
     }
 }
 
-createTable();
-readData();
+let crud=new CRUD();
+crud.readData();
