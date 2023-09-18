@@ -29,6 +29,7 @@ let tableNode=null;
 let tableBody=null;
 let trNode=null;
 let tdNode=null;
+let deleteButton=null;
 function createTable(){
     tableNode=document.createElement('table');
     tableNode.setAttribute('border','3');
@@ -48,6 +49,9 @@ class CRUD{
                 tdNode=document.createElement('td');
                 tdNode.textContent=student[key];
                 trNode.append(tdNode);
+
+                deleteButton=document.createElement('button');
+                deleteButton.setAttribute('id',)
             }
             tableBody.append(trNode) 
         }
