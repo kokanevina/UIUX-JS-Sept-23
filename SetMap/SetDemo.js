@@ -18,3 +18,5 @@ numberSet.add("hi");
 console.log(numberSet);
 console.log(numberSet.has(56));
 // implement full Set API
+
+//delete, keys, values, size, clear, forEach, entries
