@@ -2,18 +2,15 @@ class Student{
     #studentId;
     #studentName;
     #studentPercentage;
-
     constructor(id=0,sname="AAA",studentPercentage=30){
         console.log("in constructor body....");
         this.#studentId=id;
         this.#studentName=sname;
         this.#studentPercentage=studentPercentage;
     }
-
     get sid(){
         return this.#studentId;
-    }
-    
+    }  
     get sname(){
         return this.#studentName;
     }
@@ -30,7 +27,6 @@ class Student{
         PERCENTAGE:${this.#studentPercentage}`
     }
 }// ended here
-
 let student1=new Student(333,'Poonam',78.5);
 //console.log(student1.#studentId); //Property '#studentId' is not accessible outside class 'Student' because it has a private identifier.
 //console.log(student1.#studentName);
