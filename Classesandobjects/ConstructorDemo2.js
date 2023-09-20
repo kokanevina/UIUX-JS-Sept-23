@@ -45,3 +45,6 @@ for(let key in stud1){
 
 // variable holding the value a=78
 // variable holding another variable key=studenId
+
+// cloning
+let stud6=new Student(stud1.studentId,stud2.studentName,stud3.studentPercentage);
