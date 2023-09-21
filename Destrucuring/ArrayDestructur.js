@@ -15,3 +15,8 @@ const dcode=arr3[2];
 const [eid,empname,did,cname,salary]=arr3;
 console.log(eid);
 console.log(cname);
+
+
+const [empId, ...restArray]=arr3;
+console.log(empId);
+console.log(restArray);
