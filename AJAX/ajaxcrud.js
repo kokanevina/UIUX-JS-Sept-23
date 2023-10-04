@@ -47,7 +47,7 @@ function addBook(){
     const bookAuthor=document.getElementById('bookAuthor').value;
 
     const newBook={
-        "id":parseInt(id),
+        "id":parseInt(id),  // if u dont set id then json server auto incremnts id
         "bookName":bookName,
         "bookPrice":bookPrice,
         "bookAuthor":bookAuthor
@@ -63,6 +63,21 @@ function addBook(){
     xhr.onprogress=function(){
         console.log("SUCCESS");
         console.log(xhr);
+    }
+    xhr.onerror=function(){
+        console.log("something went wrong");
+    }
+}
+
+function deleteById(){
+    const bookId=document.getElementById('bid').value;
+    const xhr = new XMLHttpRequest();
+    xhr.open("DELETE", `http://localhost:3000/books/${bookId}`); 
+    xhr.send();
+    xhr.onload = function() {
+       console.log("DELETED");
+       console.log(xhr);
+      
     }
     xhr.onerror=function(){
         console.log("something went wrong");
