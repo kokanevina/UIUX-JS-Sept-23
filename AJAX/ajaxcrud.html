@@ -19,8 +19,8 @@
 </section>
 
 <section>
-    <h3>ADD new Book</h3>
-    <form action="" onsubmit="addBook()">
+    <h3>ADD /UPDATE  Book</h3>
+    <form action="" onsubmit="addorupdate(event)">
         <div>
             <label for="id">ENTER ID:</label>
             <input type="number" id="id" name="id"> 
@@ -38,7 +38,8 @@
             <input type="string" id="bookAuthor" name="bookAuthor"> 
         </div>
         <div>
-            <input type="submit" value="ADD">
+            <input type="submit" value="ADD" id="addButton">
+            <input type="submit" value="UPDATE" id="updateButton">
             <input type="reset">
         </div>
     </form>
