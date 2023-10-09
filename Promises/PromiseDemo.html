@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let promise = new Promise(function (resolve, reject) {
+    const x = "india";
+    const y = "india"
+    if (x === y) 
+        resolve("hi");
+     else 
+        reject();
+    
+});
+ 
+promise.then((res) =>console.log('Success, both strings are equal', res))
+       .catch(()=>console.log('Some error has occurred'))
+       .finally(()=>console.log("this code gets always executed"))
+    </script>
+</body>
+</html>
